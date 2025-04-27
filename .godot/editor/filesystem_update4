@@ -1,0 +1,12 @@
+res://UI/Menus/MainMenu/MainMenu.tscn
+res://UI/Menus/MainMenu/sub/MultiplayerMenu.tscn
+res://UI/Menus/MainMenu/sub/ChooseWorld.tscn
+res://UI/Menus/MainMenu/sub/ChooseCharacter.tscn
+res://UI/Menus/SettingsMenu/SettingsMenu.tscn
+res://UI/Resources/menuBG.gd
+res://UI/Resources/res_MenuButton.tscn
+res://UI/Resources/res_MenuBG.tscn
+res://UI/Menus/MainMenu/sub/ServerMenu.tscn
+res://UI/Resources/menuButton.gd
+res://UI/Menus/MainMenu/mainMenu.gd
+res://UI/Menus/SettingsMenu/settingsMenu.gd

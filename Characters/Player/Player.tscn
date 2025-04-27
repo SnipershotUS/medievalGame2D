@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://do0e4u6gsq15q"]
+
+[ext_resource type="Script" uid="uid://cfqbi2pgcp2h1" path="res://Characters/Player/player.gd" id="1_3qydi"]
+[ext_resource type="Texture2D" uid="uid://8p38y3ngh36c" path="res://Art & Animation/Races/player.png" id="2_q3lat"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l2ndj"]
+radius = 13.0
+height = 42.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3qydi"]
+radius = 13.0384
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q3lat"]
+radius = 13.0
+height = 42.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tok1r"]
+radius = 13.0
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_q3lat"]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_3qydi")
+
+[node name="PlayerBody" type="CharacterBody2D" parent="."]
+
+[node name="PlayerSprite" type="Sprite2D" parent="PlayerBody"]
+scale = Vector2(2, 2)
+texture = ExtResource("2_q3lat")
+
+[node name="Body" type="Area2D" parent="PlayerBody"]
+
+[node name="BodyArea" type="CollisionShape2D" parent="PlayerBody/Body"]
+shape = SubResource("CapsuleShape2D_l2ndj")
+
+[node name="Head" type="Area2D" parent="PlayerBody"]
+position = Vector2(0, -30)
+
+[node name="HeadArea" type="CollisionShape2D" parent="PlayerBody/Head"]
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_3qydi")
+
+[node name="BodyColl" type="CollisionShape2D" parent="PlayerBody"]
+shape = SubResource("CapsuleShape2D_q3lat")
+
+[node name="HeadColl" type="CollisionShape2D" parent="PlayerBody"]
+position = Vector2(0, -34)
+shape = SubResource("CircleShape2D_tok1r")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_q3lat")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

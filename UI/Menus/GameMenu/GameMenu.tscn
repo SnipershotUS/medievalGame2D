@@ -1,0 +1,70 @@
+[gd_scene load_steps=2 format=3 uid="uid://cddy3i8s5vr7t"]
+
+[ext_resource type="Theme" uid="uid://curoisl27tqya" path="res://UI/Resources/Themes/menu_theme.tres" id="1_3jpb4"]
+
+[node name="GameMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 1128.0
+offset_bottom = 624.0
+
+[node name="Anchor" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Buttons" type="VBoxContainer" parent="Anchor"]
+layout_mode = 0
+offset_left = -552.0
+offset_top = -300.0
+offset_right = -412.0
+offset_bottom = 18.0
+
+[node name="Inventory" type="Button" parent="Anchor/Buttons"]
+layout_mode = 2
+theme = ExtResource("1_3jpb4")
+text = "Inventory"
+
+[node name="Crafting" type="Button" parent="Anchor/Buttons"]
+layout_mode = 2
+theme = ExtResource("1_3jpb4")
+text = "Crafting"
+
+[node name="Skills" type="Button" parent="Anchor/Buttons"]
+layout_mode = 2
+theme = ExtResource("1_3jpb4")
+text = "Skills"
+
+[node name="Technology" type="Button" parent="Anchor/Buttons"]
+layout_mode = 2
+theme = ExtResource("1_3jpb4")
+text = "Technology"
+
+[node name="Faction" type="Button" parent="Anchor/Buttons"]
+layout_mode = 2
+theme = ExtResource("1_3jpb4")
+text = "Factions"
+
+[node name="Map" type="Button" parent="Anchor/Buttons"]
+layout_mode = 2
+theme = ExtResource("1_3jpb4")
+text = "Map"
+
+[node name="Notes" type="Button" parent="Anchor/Buttons"]
+layout_mode = 2
+theme = ExtResource("1_3jpb4")
+text = "Notes"
+
+[node name="SubMenuArea" type="Control" parent="Anchor"]
+anchors_preset = 0
+offset_left = -392.0
+offset_top = -300.0
+offset_right = 552.0
+offset_bottom = 300.0

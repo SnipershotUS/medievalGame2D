@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2u1xwseeswd7"]
+
+[ext_resource type="PackedScene" uid="uid://b4vrcsrd82rsv" path="res://UI/Resources/res_MenuBG.tscn" id="1_7iqdd"]
+[ext_resource type="Theme" uid="uid://curoisl27tqya" path="res://UI/Resources/Themes/menu_theme.tres" id="2_no7km"]
+
+[node name="ServerMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Anchor" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuBG" parent="Anchor" instance=ExtResource("1_7iqdd")]
+layout_mode = 0
+
+[node name="Buttons" type="HBoxContainer" parent="Anchor"]
+offset_left = -572.0
+offset_top = -319.0
+offset_right = 388.0
+offset_bottom = -277.0
+
+[node name="GameplayButton" type="Button" parent="Anchor/Buttons"]
+layout_mode = 2
+theme = ExtResource("2_no7km")
+text = "Gameplay"
+
+[node name="VideoButton" type="Button" parent="Anchor/Buttons"]
+layout_mode = 2
+theme = ExtResource("2_no7km")
+text = "Video"
+
+[node name="AudioButton" type="Button" parent="Anchor/Buttons"]
+layout_mode = 2
+theme = ExtResource("2_no7km")
+text = "Audio
+"
+
+[node name="ControlsButton" type="Button" parent="Anchor/Buttons"]
+layout_mode = 2
+theme = ExtResource("2_no7km")
+text = "Controls"
+
+[node name="MenuArea" type="Control" parent="Anchor"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -576.0
+offset_top = -268.0
+offset_right = 576.0
+offset_bottom = 324.0

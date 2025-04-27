@@ -1,0 +1,66 @@
+[gd_scene load_steps=6 format=3 uid="uid://bl83apd2ec47o"]
+
+[ext_resource type="Script" uid="uid://oymbux17lrhw" path="res://UI/Menus/MainMenu/mainMenu.gd" id="1_rlwnk"]
+[ext_resource type="PackedScene" uid="uid://b5tms5gwodp48" path="res://UI/Menus/MainMenu/sub/ChooseWorld.tscn" id="2_8e7ed"]
+[ext_resource type="PackedScene" uid="uid://p1llqx1gte8k" path="res://UI/Menus/SettingsMenu/SettingsMenu.tscn" id="3_ie2mw"]
+[ext_resource type="PackedScene" uid="uid://b4vrcsrd82rsv" path="res://UI/Resources/res_MenuBG.tscn" id="4_8e7ed"]
+[ext_resource type="PackedScene" uid="uid://bcwso72kxj1cj" path="res://UI/Resources/res_MenuButton.tscn" id="5_mhb8u"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -577.0
+offset_top = -324.0
+offset_right = 575.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rlwnk")
+chooseWorld = ExtResource("2_8e7ed")
+settings = ExtResource("3_ie2mw")
+is_main_menu = true
+
+[node name="Anchor" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuBG" parent="Anchor" instance=ExtResource("4_8e7ed")]
+layout_mode = 0
+
+[node name="Buttons" type="VBoxContainer" parent="Anchor"]
+layout_mode = 0
+offset_left = -75.0
+offset_top = -90.0
+offset_right = 75.0
+offset_bottom = 90.0
+
+[node name="PlayButton" parent="Anchor/Buttons" instance=ExtResource("5_mhb8u")]
+layout_mode = 2
+text = "Play"
+
+[node name="JoinButton" parent="Anchor/Buttons" instance=ExtResource("5_mhb8u")]
+layout_mode = 2
+text = "Join"
+
+[node name="SettingsButton" parent="Anchor/Buttons" instance=ExtResource("5_mhb8u")]
+layout_mode = 2
+text = "Settings"
+
+[node name="QuitButton" parent="Anchor/Buttons" instance=ExtResource("5_mhb8u")]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="Anchor/Buttons/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="Anchor/Buttons/JoinButton" to="." method="_on_join_button_pressed"]
+[connection signal="pressed" from="Anchor/Buttons/SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="Anchor/Buttons/QuitButton" to="." method="_on_quit_button_pressed"]

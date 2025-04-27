@@ -1,0 +1,73 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1745712964
+icon.svg::CompressedTexture2D/CompressedTexture2D::7138243947891758611::1743530146::1743530150::1::::<><><>0<>0<>2e813d553ae7614673e91f263ea07994<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Art & Animation/::1743531661
+::res://Art & Animation/Architecture/::1743531661
+::res://Art & Animation/Items/::1743531613
+::res://Art & Animation/Logic/::1743531580
+::res://Art & Animation/Nature/::1743531599
+::res://Art & Animation/Races/::1743536428
+player.png::CompressedTexture2D/CompressedTexture2D::2348957817776202056::1743536428::1743536428::1::::<><><>0<>0<>bf8bb92795acd96940432f424e5388c3<>res://.godot/imported/player.png-b12e6b331fc04f35458ced37d4f98ec5.ctex::
+::res://Art & Animation/Races/Human/::1743531567
+::res://Characters/::1745635943
+::res://Characters/NPCs/::1743531509
+npc.gd::GDScript/GDScript::7463386490133494553::1743531248::0::1::::<>Node<><>0<>0<><>::
+npcFriendly.gd::GDScript/GDScript::4607781089820811676::1743531183::0::1::::<>Node<><>0<>0<><>::
+npcHostile.gd::GDScript/GDScript::6681384652019151680::1743531192::0::1::::<>Node<><>0<>0<><>::
+npcLogic.gd::GDScript/GDScript::7775837910135391448::1743531158::0::1::::<>Node<><>0<>0<><>::
+npcNeutral.gd::GDScript/GDScript::6312757954554564743::1743531203::0::1::::<>Node<><>0<>0<><>::
+::res://Characters/Player/::1745712521
+player.gd::GDScript/GDScript::5156892074563752460::1745635771::0::1::::Player<>CharacterBody2D<><>0<>0<><>::
+Player.tscn::PackedScene::8193811060510825108::1745712521::0::1::::<><><>0<>0<><>::uid://cfqbi2pgcp2h1::::res://Characters/Player/player.gd<>uid://8p38y3ngh36c::::res://Art & Animation/Races/player.png
+playerAttack.gd::GDScript/GDScript::5112083773039958350::1745635302::0::1::::<>Node<><>0<>0<><>::
+playerMove.gd::GDScript/GDScript::6440694111967564212::1745635293::0::1::::<>Node<><>0<>0<><>::
+playerState.gd::GDScript/GDScript::7905865165520200039::1743532603::0::1::::<>Node<><>0<>0<><>::
+raceSelector.gd::GDScript/GDScript::5727201913738620442::1743534765::0::1::::RaceSelector<>Node<><>0<>0<><>::
+stats.gd::GDScript/GDScript::6993906881861375772::1745635899::0::1::::Stats<>Node<><>0<>0<><>::
+::res://Game/::1745712521
+game.gd::GDScript/GDScript::8558686964602538512::1743534336::0::1::::Game<>GameLogic<><>0<>0<><>::
+Game.tscn::PackedScene::2491574164102322186::1745712521::0::1::::<><><>0<>0<><>::uid://dt65lanjnb2dg::::res://Game/game.gd
+gameLogic.gd::GDScript/GDScript::580228825082648100::1743534336::0::1::::GameLogic<>Node2D<><>0<>0<><>::
+gameState.gd::GDScript/GDScript::602292450383037649::1743534336::0::1::::GameState<>GameLogic<><>0<>0<><>::
+::res://Race/::1745639809
+human.gd::GDScript/GDScript::9174397547079264432::1745639809::0::1::::Human<>Race<><>0<>0<><>::
+race.gd::GDScript/GDScript::6021440325160748604::1745635881::0::1::::Race<>Resource<><>0<>0<><>::
+::res://UI/::1745695039
+::res://UI/Menus/::1745711968
+menuRoot.gd::GDScript::3141110897146239768::1745711968::0::1::::MainMenuRoot<>Control<><>0<>0<><>::
+::res://UI/Menus/GameMenu/::1745712776
+GameMenu.tscn::PackedScene::4991108713642331551::1745712776::0::1::::<><><>0<>0<><>::uid://curoisl27tqya::::res://UI/Resources/Themes/menu_theme.tres
+::res://UI/Menus/GameMenu/sub/::1743578742
+Crafting.tscn::PackedScene/PackedScene::8962817095859250498::1743535305::0::1::::<><><>0<>0<><>::
+Factions.tscn::PackedScene/PackedScene::2203468194917541271::1743561467::0::1::::<><><>0<>0<><>::
+Inventory.tscn::PackedScene/PackedScene::5002194664819479294::1743535287::0::1::::<><><>0<>0<><>::
+Map.tscn::PackedScene/PackedScene::3565256058259135509::1743560552::0::1::::<><><>0<>0<><>::
+Notes.tscn::PackedScene/PackedScene::3927448161339439149::1743561481::0::1::::<><><>0<>0<><>::
+Skills.tscn::PackedScene/PackedScene::5750498441044996501::1743561458::0::1::::<><><>0<>0<><>::
+Technology.tscn::PackedScene/PackedScene::3263775852768279516::1743561449::0::1::::<><><>0<>0<><>::
+::res://UI/Menus/MainMenu/::1745713461
+mainMenu.gd::GDScript::1032920353959030944::1745712149::0::1::::<>MainMenuRoot<><>0<>0<><>::
+MainMenu.tscn::PackedScene::3228323299109771314::1745713467::0::1::::<><><>0<>0<><>::uid://oymbux17lrhw::::res://UI/Menus/MainMenu/mainMenu.gd<>uid://b5tms5gwodp48::::res://UI/Menus/MainMenu/sub/ChooseWorld.tscn<>uid://p1llqx1gte8k::::res://UI/Menus/SettingsMenu/SettingsMenu.tscn<>uid://b4vrcsrd82rsv::::res://UI/Resources/res_MenuBG.tscn<>uid://c7d3e7321mtdr::::res://UI/Resources/menuBG.gd<>uid://bcwso72kxj1cj::::res://UI/Resources/res_MenuButton.tscn
+::res://UI/Menus/MainMenu/sub/::1745713461
+ChooseCharacter.tscn::PackedScene::3745991326219665549::1745713593::0::1::::<><><>0<>0<><>::uid://cc1n0pumydrqc::::res://UI/Menus/MainMenu/sub/choose_character.gd<>uid://b4vrcsrd82rsv::::res://UI/Resources/res_MenuBG.tscn<>uid://curoisl27tqya::::res://UI/Resources/Themes/menu_theme.tres
+ChooseWorld.tscn::PackedScene::4532071504352449135::1745713582::0::1::::<><><>0<>0<><>::uid://dikoiacbsfudn::::res://UI/Menus/MainMenu/sub/choose_world.gd<>uid://b4vrcsrd82rsv::::res://UI/Resources/res_MenuBG.tscn<>uid://curoisl27tqya::::res://UI/Resources/Themes/menu_theme.tres
+choose_character.gd::GDScript::4967727661345183230::1745703970::0::1::::<>MainMenuRoot<><>0<>0<><>::
+choose_world.gd::GDScript::7742280905133447723::1745703991::0::1::::<>MainMenuRoot<><>0<>0<><>::
+MultiplayerMenu.tscn::PackedScene::4324427915580914350::1745713494::0::1::::<><><>0<>0<><>::uid://b4vrcsrd82rsv::::res://UI/Resources/res_MenuBG.tscn
+PlayerCreationMenu.tscn::PackedScene/PackedScene::6424297116523785404::1745698505::0::1::::<><><>0<>0<><>::uid://curoisl27tqya::::res://UI/Resources/Themes/menu_theme.tres
+WorldCreationMenu.tscn::PackedScene/PackedScene::6678849648738868297::1745698505::0::1::::<><><>0<>0<><>::uid://curoisl27tqya::::res://UI/Resources/Themes/menu_theme.tres
+::res://UI/Menus/SettingsMenu/::1745713461
+settingsMenu.gd::GDScript::1761839116619494642::1745703916::0::1::::<>MainMenuRoot<><>0<>0<><>::
+SettingsMenu.tscn::PackedScene::1107194883923620340::1745713547::0::1::::<><><>0<>0<><>::uid://curoisl27tqya::::res://UI/Resources/Themes/menu_theme.tres<>uid://0dph6fwhv8vm::::res://UI/Menus/SettingsMenu/settingsMenu.gd<>uid://b4vrcsrd82rsv::::res://UI/Resources/res_MenuBG.tscn
+::res://UI/Menus/SettingsMenu/sub/::1743578676
+Audio.tscn::PackedScene/PackedScene::2869144333981615984::1743560417::0::1::::<><><>0<>0<><>::
+Controls.tscn::PackedScene/PackedScene::5580378461703168339::1743560461::0::1::::<><><>0<>0<><>::
+Game.tscn::PackedScene/PackedScene::2050569907875951225::1743560470::0::1::::<><><>0<>0<><>::
+Video.tscn::PackedScene/PackedScene::5015404892275839389::1743560425::0::1::::<><><>0<>0<><>::
+::res://UI/Resources/::1745713451
+menuBG.gd::GDScript::7026786441302221475::1745713451::0::1::::MenuBG<>ColorRect<><>0<>0<><>::
+menuButton.gd::GDScript::5666817577039966651::1745698929::0::1::::ResButton<>Button<><>0<>0<><>::
+res_MenuBG.tscn::PackedScene::4466285814359599685::1745713511::0::1::::<><><>0<>0<><>::uid://c7d3e7321mtdr::::res://UI/Resources/menuBG.gd
+res_MenuButton.tscn::PackedScene::2573334311485343469::1745713377::0::1::::<><><>0<>0<><>::uid://curoisl27tqya::::res://UI/Resources/Themes/menu_theme.tres<>uid://cm0bwme2a1ikx::::res://UI/Resources/menuButton.gd
+::res://UI/Resources/Themes/::1745698505
+menu_theme.tres::Theme/Theme::6212577949899272104::1743572666::0::1::::<><><>0<>0<><>::
